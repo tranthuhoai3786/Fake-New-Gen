@@ -1,0 +1,40 @@
+a {
+	color: #394176;
+}
+a:hover {
+	color: #ba3e1a;
+}
+.big-title a {
+	color: white;
+}
+.big-title a:hover {
+
+}
+.list-article ul li a {
+	color: #394176;
+}
+.list-article ul li a:hover {
+	color: #ba3e1a;
+}
+.small-post ul li a {
+	color: #555;
+}
+.small-post ul li a:hover {
+	color: #ba3e1a;
+}
+.box .description a h2 {
+	color: #ba3e1a;
+}
+.box .description a h2:hover {
+	color: #394176;
+}
+.focus-center-hot .thumbnail h3:hover {
+	color: #ba3e1a;
+}
+.nav-bottom ul li a {
+	color : #a1a1a1;
+}
+.nav-bottom ul li a:hover {
+	color: #bb3914;
+	text-decoration: underline;
+}
