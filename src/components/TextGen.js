@@ -7,12 +7,14 @@ import Article from "./Article";
 import { setData } from '../actions';
 import { useDispatch } from "react-redux";
 import { useHistory } from 'react-router-dom';
+import SaveText from './SaveText';
 // import { useNavigate } from 'react-router-dom';
 import logo from '../img/logoptit.png';
 
 import {
   Link
 } from "react-router-dom";
+import AIVideoGen from "./AIVideo";
 // import { useSelector } from "react-redux";
 // import showArticle from "./Article";
 // import ArticleRTE from "./Article";
@@ -57,8 +59,8 @@ function TextGen() {
 
   const genText = async tags => {
     const res = await openai.createChatCompletion({
-      model: "gpt-3.5-turbo",
-      max_tokens: 600,//700
+      model: "gpt-4",
+      max_tokens: 700,//700
       messages: [{ role: "user", content: "viết một bài báo giả sử dụng những từ khóa sau: " + tags.join(", ") }]
     })
     console.log(res)
@@ -68,7 +70,8 @@ function TextGen() {
 
   const genCaption = async tags => {
     const res = await openai.createChatCompletion({
-      model: "gpt-3.5-turbo",
+      // model: "gpt-3.5-turbo",
+      model: "gpt-4",
       max_tokens: 50,//700
       messages: [{ role: "user", content: "viết 1 câu chú thích cho ảnh sử dụng những từ khóa sau: " + tags.join(", ") }]
     })
@@ -213,6 +216,7 @@ function TextGen() {
 
           {showRte && (<div>
             <JoditRTE placeholder={rs2} images={imageoutput} />
+            {/* <SaveText placeholder={textoutput} /> */}
           </div>)}
           {/* {textoutput && !loading && <a href="/"><button className="button-12" onClick={() => setShowRte(!showRte)}>{!showRte ? "Edit the News" : "Back"}</button></a>} */}
           {textoutput && !loading && <button className="button-12" onClick={() => setShowRte(!showRte)}>{!showRte ? "Edit the News" : "Back"}</button>}
@@ -232,6 +236,7 @@ function TextGen() {
           {showRte && <button className="button-12" onClick={() => setShowArticle(!showArticle)}> {!showArticle ? "preview the article" : setShowRte(false) && setShow1(!setShow1)}</button>}
           {showArticle && (<div>
             <Article placeholder={rs3} images={imageoutputs} caption={captionoutput} />
+
           </div>)}
 
         </div>

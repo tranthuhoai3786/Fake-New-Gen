@@ -4,6 +4,8 @@ import '../article.css';
 import ArticleTitle from './ArticleTitle';
 import { useSelector } from 'react-redux';
 import AIVideoGen from './AIVideo';
+import saveText from './SaveText';
+
 
 import logo from '../img/logo.png';
 import homeicon from '../img/home-icon.png';
@@ -68,7 +70,8 @@ const Article = ({ placeholder, images, caption }) => {
         <div>
             {showArticleTitle && (<div>
                 <ArticleTitle placeholder={placeholder} images={images} captions={caption} />
-                <AIVideoGen placeholder={placeholder} images={images} />
+                {/* <AIVideoGen placeholder={placeholder} images={images} /> */}
+                {/* <saveText placeholder={placeholder} /> */}
             </div>)}
 
             {showArticle && (<div>
@@ -199,7 +202,7 @@ const Article = ({ placeholder, images, caption }) => {
                                                 {!showArticleTitle ? tt : setShowArticle(false)}
                                             </h3>
 
-                                            <p><p onClick={() => setShowArticleTitle(!showArticleTitle)}>{!showArticleTitle ? tt1 : setShowArticle(false)}</p></p>
+                                            <p onClick={() => setShowArticleTitle(!showArticleTitle)}>{!showArticleTitle ? tt1 : setShowArticle(false)}</p>
                                         </div>
                                     </div>
                                     <div className="focus-center-hot">

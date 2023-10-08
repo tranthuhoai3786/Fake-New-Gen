@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  position: relative;
+  padding-bottom: 60px;
 }
 
 .App-logo {
@@ -304,7 +306,7 @@ body {
     cursor: pointer;
 }
 .container {
-	min-height: 800px;
+	min-height: 2800px;
 }
 .container .wrapper .banner {
 	width: 100%;
@@ -691,11 +693,15 @@ body {
 /* footer */
 .col_white_amrc { color:#FFF;}
 .footer { 
+	position:absolute;
 	width:100%; 
 	background-color:#263238; 
 	min-height:180px; 
 	max-height: 200px;
-	padding:10px 0px 25px 0px ;}
+	padding:10px 0px 25px 0px ;
+	left: 0;
+ 	bottom: 0;
+}
 .pt2 { padding-top:40px ; margin-bottom:20px ;}
 .footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 .mb10 { padding-bottom:15px ;}
