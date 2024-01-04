@@ -775,6 +775,7 @@ body {
 	font-weight: 600;
 }
 .video-text2ai {
-	width: 100%;
-	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }

@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+python inference.py --driven_audio voice.wav --source_image people_0.wav --enhancer gfpgan 
+
+
+python inference.py --driven_audio /home/iec-ptit/Hoai/Fake-New-Gen/src/SadTalker/examples/driven_audio/voice.wav --source_image /home/iec-ptit/Hoai/Fake-New-Gen/src/SadTalker/examples/source_image/people_0.png --enhancer gfpgan 

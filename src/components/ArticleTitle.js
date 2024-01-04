@@ -4,6 +4,7 @@ import Deepfake from './deepFake';
 // import React from "react";
 // import ReactPlayer from "react-player";
 
+import video from '../SadTalker/results/2023_12_29_23.35.45.mp4'
 import img from '../img/thegioi.jpg'
 import logo from '../img/logo.png';
 import homeicon from '../img/home-icon.png';
@@ -139,12 +140,13 @@ const ArticleTitle = ({ placeholder, images, captions }) => {
                                     {/* <ReactPlayer url="./finavi.mp4" width="100%" height="100%" controls={true} />; */}
                                     {/* <source src="D:\\garanmem\\Kì2-22-23\\DL\\Fake-News-Gen-master\\Fake-News-Gen\\Fake-News-Gen (2)\\src\\components\\finavi.mp4" type="video/mp4" /> */}
                                     {/* Thẻ <source> để cung cấp các định dạng video khác nhau (nếu có) */}
+                                    <source src={video} type="video/mp4" />
                                 </video>
 
-                                <div >
+                                {/* <div >
 
                                     <p onClick={() => setShowDeepfake(!showDeepfake)}>{!showDeepfake ? 'thay mat' : setShowArticleTitle(false)}</p>
-                                </div>
+                                </div> */}
                                 <p className='doan'>
                                     {arr[1]}
                                 </p><br />

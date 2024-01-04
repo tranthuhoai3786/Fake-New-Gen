@@ -60,7 +60,7 @@ function TextGen() {
   const genText = async tags => {
     const res = await openai.createChatCompletion({
       model: "gpt-4",
-      max_tokens: 700,//700
+      max_tokens: 200,//700
       messages: [{ role: "user", content: "viết một bài báo giả sử dụng những từ khóa sau: " + tags.join(", ") }]
     })
     console.log(res)
@@ -216,7 +216,7 @@ function TextGen() {
 
           {showRte && (<div>
             <JoditRTE placeholder={rs2} images={imageoutput} />
-            {/* <SaveText placeholder={textoutput} /> */}
+            <SaveText placeholder={textoutput} />
           </div>)}
           {/* {textoutput && !loading && <a href="/"><button className="button-12" onClick={() => setShowRte(!showRte)}>{!showRte ? "Edit the News" : "Back"}</button></a>} */}
           {textoutput && !loading && <button className="button-12" onClick={() => setShowRte(!showRte)}>{!showRte ? "Edit the News" : "Back"}</button>}
