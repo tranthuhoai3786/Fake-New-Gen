@@ -24,17 +24,18 @@ function App() {
       <div className="App">
 
         <Switch>
-          <Route path="/" exact>
+          {/* <Route path="/" exact> */}
 
-            <TextGen />
-          </Route>
-          <Route path="/article">
-            <Article />
-            <AIVideoGen />
-          </Route>
-          <Route path="/article-title">
-            <ArticleTitle />
-          </Route>
+          <TextGen />
+          {/* </Route> */}
+          {/* <Route path="/article"> */}
+          <Article />
+          {/* <AIVideoGen /> */}
+          {/* </Route> */}
+          {/* <Route path="/article-title"> */}
+          <ArticleTitle />
+
+          {/* </Route> */}
         </Switch>
 
 

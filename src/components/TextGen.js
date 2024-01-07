@@ -7,7 +7,10 @@ import Article from "./Article";
 import { setData } from '../actions';
 import { useDispatch } from "react-redux";
 import { useHistory } from 'react-router-dom';
-import SaveText from './SaveText';
+import SaveText from './saveText';
+// import SaveToFile from './SaveText';
+import Voice from './Voice'
+
 // import { useNavigate } from 'react-router-dom';
 import logo from '../img/logoptit.png';
 
@@ -61,7 +64,7 @@ function TextGen() {
     const res = await openai.createChatCompletion({
       model: "gpt-4",
       max_tokens: 200,//700
-      messages: [{ role: "user", content: "viết một bài báo giả sử dụng những từ khóa sau: " + tags.join(", ") }]
+      messages: [{ role: "user", content: "viết một bài báo giả gồm tiêu đề và nội dung sử dụng những từ khóa sau: " + tags.join(", ") }]
     })
     console.log(res)
     setTextoutput(res.data.choices[0].message.content)
@@ -217,6 +220,8 @@ function TextGen() {
           {showRte && (<div>
             <JoditRTE placeholder={rs2} images={imageoutput} />
             <SaveText placeholder={textoutput} />
+            {/* <SaveToFile placeholder={textoutput} /> */}
+            <Voice />
           </div>)}
           {/* {textoutput && !loading && <a href="/"><button className="button-12" onClick={() => setShowRte(!showRte)}>{!showRte ? "Edit the News" : "Back"}</button></a>} */}
           {textoutput && !loading && <button className="button-12" onClick={() => setShowRte(!showRte)}>{!showRte ? "Edit the News" : "Back"}</button>}

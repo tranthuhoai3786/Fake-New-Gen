@@ -18,3 +18,15 @@ const SaveText = ({ placeholder }) => {
 };
 
 export default SaveText;
+
+// const SaveToFile = ({ placeholder }) => {
+//     // const name = "Duong123";
+//     const blob = new Blob([placeholder], { type: "text/plain" });
+//     const link = document.createElement("a");
+//     link.href = URL.createObjectURL(blob);
+//     link.download = "filename.txt";
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+// };
+// export default SaveToFile;

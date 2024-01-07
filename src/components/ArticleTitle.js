@@ -4,7 +4,7 @@ import Deepfake from './deepFake';
 // import React from "react";
 // import ReactPlayer from "react-player";
 
-import video from '../SadTalker/results/2023_12_29_23.35.45.mp4'
+import video from '../SadTalker/results/2024_01_03_09.22.11.mp4'
 import img from '../img/thegioi.jpg'
 import logo from '../img/logo.png';
 import homeicon from '../img/home-icon.png';
@@ -79,9 +79,9 @@ const ArticleTitle = ({ placeholder, images, captions }) => {
                                 <li><a href="#">QUIZZ</a></li>
                                 <li><a href="#">WESEND</a></li>
                             </ul>
-                            <div className="search">
-                                <input type="text" placeholder="Nhập nội dung tìm kiếm..." />
-                            </div>
+                            {/* <div className="search"> */}
+                            {/* <input type="text" placeholder="Nhập nội dung tìm kiếm..." /> */}
+                            {/* </div> */}
                         </div>
                     </div>
                     <div className="header-wrapper1">
@@ -94,8 +94,8 @@ const ArticleTitle = ({ placeholder, images, captions }) => {
                                 </div>
                             </div>
                             <div className="link-app">
-                                <span className="send-message">Gửi tin nhắn nhanh - we</span>
-                                <span className="down-app">Tải Ứng Dụng Đọc Tin Kênh 14</span>
+                                {/* <span className="send-message">Gửi tin nhắn nhanh - we</span>
+                                <span className="down-app">Tải Ứng Dụng Đọc Tin Kênh 14</span> */}
                             </div>
                         </div>
                     </div>

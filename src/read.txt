@@ -1,0 +1,9 @@
+python inference.py --driven_audio /home/congtt/Hoai/Fake-New-Gen/src/SadTalker/examples/driven_audio/voice.wav --source_image /home/congtt/Hoai/Fake-New-Gen/src/SadTalker/examples/source_image/art_2.png --enhancer gfpgan 
+
+Robot đã bắt đầu tham gia vào cuộc sống hàng ngày của con người như một công parn đáng tin cậy trong nhiều lĩnh vực, từ công nghiệp, y tế đến giáo dục. Những robot này không chỉ cung cấp giúp đỡ cần thiết cho con người, mà còn làm cho cuộc sống trở nên dễ dàng hơn, tiện lợi hơn.
+
+Tuy nhiên, việc ứng dụng công nghệ robot tự động trong cuộc sống hằng ngày cũng mang lại những thách thức đáng kể. Một số người lo ngại rằng việc sử dụng robot có thể dẫn đến việc mất việc làm, và có thể đồng thời tạo ra những vấn đề về b
+
+npm not found -> nvm install node -> nvm use 16.20.1
+
+python inference.py --driven_audio /home/iec-ptit/Hoai/Fake-New-Gen/src/SadTalker/examples/driven_audio/voice.wav --source_image /home/iec-ptit/Hoai/Fake-New-Gen/src/SadTalker/examples/source_image/people_0.png --enhancer gfpgan 

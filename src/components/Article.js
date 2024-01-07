@@ -4,7 +4,7 @@ import '../article.css';
 import ArticleTitle from './ArticleTitle';
 import { useSelector } from 'react-redux';
 import AIVideoGen from './AIVideo';
-import saveText from './SaveText';
+// import SaveText from './SaveText';
 
 
 import logo from '../img/logo.png';
@@ -84,9 +84,9 @@ const Article = ({ placeholder, images, caption }) => {
                                 <li><a href="#">QUIZZ</a></li>
                                 <li><a href="#">WESEND</a></li>
                             </ul>
-                            <div className="search">
+                            {/* <div className="search">
                                 <input type="text" placeholder="Nhập nội dung tìm kiếm..." />
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="header-wrapper1">
@@ -99,8 +99,8 @@ const Article = ({ placeholder, images, caption }) => {
                                 </div>
                             </div>
                             <div className="link-app">
-                                <span className="send-message">Gửi tin nhắn nhanh - we</span>
-                                <span className="down-app">Tải Ứng Dụng Đọc Tin Kênh 14</span>
+                                {/* <span className="send-message">Gửi tin nhắn nhanh - we</span>
+                                <span className="down-app">Tải Ứng Dụng Đọc Tin Kênh 14</span> */}
                             </div>
                         </div>
                     </div>
